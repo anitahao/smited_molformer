@@ -1,0 +1,294 @@
+=================================================================
+MOLFormer — Experiment 2: Linear Probing
+=================================================================
+Timestamp : 2026-05-04T15:15:37.890376
+Device    : cuda
+Seed      : 42
+Loading MolFormer from HuggingFace...
+Architecture: 12 layers | device: cuda
+Loaded 1000 SMILES from qm9.csv
+
+=================================================================
+Dataset: QM9  (1000 SMILES)
+=================================================================
+Extracting hidden states:   0%|          | 0/1000 [00:00<?, ?it/s]Extracting hidden states:   0%|          | 1/1000 [00:06<1:42:04,  6.13s/it]Extracting hidden states:   0%|          | 4/1000 [00:06<19:43,  1.19s/it]  Extracting hidden states:   1%|          | 12/1000 [00:06<04:57,  3.33it/s]Extracting hidden states:   2%|▏         | 20/1000 [00:06<02:28,  6.60it/s]Extracting hidden states:   3%|▎         | 28/1000 [00:06<01:30, 10.78it/s]Extracting hidden states:   4%|▎         | 36/1000 [00:06<01:00, 15.93it/s]Extracting hidden states:   4%|▍         | 44/1000 [00:06<00:43, 21.99it/s]Extracting hidden states:   5%|▌         | 52/1000 [00:06<00:32, 28.75it/s]Extracting hidden states:   6%|▌         | 60/1000 [00:06<00:26, 35.64it/s]Extracting hidden states:   7%|▋         | 68/1000 [00:07<00:21, 42.51it/s]Extracting hidden states:   8%|▊         | 76/1000 [00:07<00:18, 48.97it/s]Extracting hidden states:   8%|▊         | 84/1000 [00:07<00:16, 54.44it/s]Extracting hidden states:   9%|▉         | 92/1000 [00:07<00:15, 59.16it/s]Extracting hidden states:  10%|█         | 100/1000 [00:07<00:14, 62.90it/s]Extracting hidden states:  11%|█         | 108/1000 [00:07<00:13, 65.81it/s]Extracting hidden states:  12%|█▏        | 116/1000 [00:07<00:12, 68.13it/s]Extracting hidden states:  12%|█▏        | 124/1000 [00:07<00:12, 69.22it/s]Extracting hidden states:  13%|█▎        | 132/1000 [00:07<00:12, 70.74it/s]Extracting hidden states:  14%|█▍        | 140/1000 [00:08<00:11, 71.84it/s]Extracting hidden states:  15%|█▍        | 148/1000 [00:08<00:11, 72.58it/s]Extracting hidden states:  16%|█▌        | 156/1000 [00:08<00:11, 73.18it/s]Extracting hidden states:  16%|█▋        | 164/1000 [00:08<00:11, 73.56it/s]Extracting hidden states:  17%|█▋        | 172/1000 [00:08<00:11, 73.73it/s]Extracting hidden states:  18%|█▊        | 180/1000 [00:08<00:11, 73.93it/s]Extracting hidden states:  19%|█▉        | 188/1000 [00:08<00:10, 74.07it/s]Extracting hidden states:  20%|█▉        | 196/1000 [00:08<00:11, 73.06it/s]Extracting hidden states:  20%|██        | 204/1000 [00:08<00:10, 73.19it/s]Extracting hidden states:  21%|██        | 212/1000 [00:09<00:10, 73.31it/s]Extracting hidden states:  22%|██▏       | 220/1000 [00:09<00:10, 73.63it/s]Extracting hidden states:  23%|██▎       | 228/1000 [00:09<00:10, 73.84it/s]Extracting hidden states:  24%|██▎       | 236/1000 [00:09<00:10, 73.99it/s]Extracting hidden states:  24%|██▍       | 244/1000 [00:09<00:10, 74.17it/s]Extracting hidden states:  25%|██▌       | 252/1000 [00:09<00:10, 74.26it/s]Extracting hidden states:  26%|██▌       | 260/1000 [00:09<00:10, 73.93it/s]Extracting hidden states:  27%|██▋       | 268/1000 [00:09<00:09, 73.99it/s]Extracting hidden states:  28%|██▊       | 276/1000 [00:09<00:09, 74.08it/s]Extracting hidden states:  28%|██▊       | 284/1000 [00:10<00:09, 74.11it/s]Extracting hidden states:  29%|██▉       | 292/1000 [00:10<00:09, 74.18it/s]Extracting hidden states:  30%|███       | 300/1000 [00:10<00:09, 74.25it/s]Extracting hidden states:  31%|███       | 308/1000 [00:10<00:09, 74.27it/s]Extracting hidden states:  32%|███▏      | 316/1000 [00:10<00:09, 74.26it/s]Extracting hidden states:  32%|███▏      | 324/1000 [00:10<00:09, 74.26it/s]Extracting hidden states:  33%|███▎      | 332/1000 [00:10<00:08, 74.37it/s]Extracting hidden states:  34%|███▍      | 340/1000 [00:10<00:08, 73.89it/s]Extracting hidden states:  35%|███▍      | 348/1000 [00:10<00:08, 74.02it/s]Extracting hidden states:  36%|███▌      | 356/1000 [00:10<00:08, 74.10it/s]Extracting hidden states:  36%|███▋      | 364/1000 [00:11<00:08, 74.18it/s]Extracting hidden states:  37%|███▋      | 372/1000 [00:11<00:08, 74.21it/s]Extracting hidden states:  38%|███▊      | 380/1000 [00:11<00:08, 74.20it/s]Extracting hidden states:  39%|███▉      | 388/1000 [00:11<00:08, 74.10it/s]Extracting hidden states:  40%|███▉      | 396/1000 [00:11<00:08, 74.15it/s]Extracting hidden states:  40%|████      | 404/1000 [00:11<00:08, 74.20it/s]Extracting hidden states:  41%|████      | 412/1000 [00:11<00:11, 52.04it/s]Extracting hidden states:  42%|████▏     | 420/1000 [00:12<00:10, 57.10it/s]Extracting hidden states:  43%|████▎     | 428/1000 [00:12<00:09, 61.21it/s]Extracting hidden states:  44%|████▎     | 436/1000 [00:12<00:08, 64.43it/s]Extracting hidden states:  44%|████▍     | 444/1000 [00:12<00:08, 66.86it/s]Extracting hidden states:  45%|████▌     | 452/1000 [00:12<00:07, 68.71it/s]Extracting hidden states:  46%|████▌     | 460/1000 [00:12<00:07, 69.91it/s]Extracting hidden states:  47%|████▋     | 468/1000 [00:12<00:07, 71.08it/s]Extracting hidden states:  48%|████▊     | 476/1000 [00:12<00:07, 71.80it/s]Extracting hidden states:  48%|████▊     | 484/1000 [00:12<00:07, 72.18it/s]Extracting hidden states:  49%|████▉     | 492/1000 [00:12<00:07, 71.61it/s]Extracting hidden states:  50%|█████     | 500/1000 [00:13<00:06, 72.29it/s]Extracting hidden states:  51%|█████     | 508/1000 [00:13<00:06, 72.80it/s]Extracting hidden states:  52%|█████▏    | 516/1000 [00:13<00:06, 73.29it/s]Extracting hidden states:  52%|█████▏    | 524/1000 [00:13<00:06, 73.52it/s]Extracting hidden states:  53%|█████▎    | 532/1000 [00:13<00:06, 73.79it/s]Extracting hidden states:  54%|█████▍    | 540/1000 [00:13<00:06, 73.91it/s]Extracting hidden states:  55%|█████▍    | 548/1000 [00:13<00:06, 73.98it/s]Extracting hidden states:  56%|█████▌    | 556/1000 [00:13<00:06, 73.86it/s]Extracting hidden states:  56%|█████▋    | 564/1000 [00:13<00:05, 73.90it/s]Extracting hidden states:  57%|█████▋    | 572/1000 [00:14<00:05, 73.32it/s]Extracting hidden states:  58%|█████▊    | 580/1000 [00:14<00:05, 73.45it/s]Extracting hidden states:  59%|█████▉    | 588/1000 [00:14<00:05, 73.63it/s]Extracting hidden states:  60%|█████▉    | 596/1000 [00:14<00:05, 73.64it/s]Extracting hidden states:  60%|██████    | 604/1000 [00:14<00:05, 73.66it/s]Extracting hidden states:  61%|██████    | 612/1000 [00:14<00:05, 73.52it/s]Extracting hidden states:  62%|██████▏   | 620/1000 [00:14<00:05, 73.56it/s]Extracting hidden states:  63%|██████▎   | 628/1000 [00:14<00:05, 73.68it/s]Extracting hidden states:  64%|██████▎   | 636/1000 [00:14<00:04, 73.56it/s]Extracting hidden states:  64%|██████▍   | 644/1000 [00:15<00:04, 73.49it/s]Extracting hidden states:  65%|██████▌   | 652/1000 [00:15<00:04, 73.48it/s]Extracting hidden states:  66%|██████▌   | 660/1000 [00:15<00:04, 73.47it/s]Extracting hidden states:  67%|██████▋   | 668/1000 [00:15<00:04, 73.49it/s]Extracting hidden states:  68%|██████▊   | 676/1000 [00:15<00:04, 73.46it/s]Extracting hidden states:  68%|██████▊   | 684/1000 [00:15<00:04, 72.84it/s]Extracting hidden states:  69%|██████▉   | 692/1000 [00:15<00:04, 73.07it/s]Extracting hidden states:  70%|███████   | 700/1000 [00:15<00:04, 73.43it/s]Extracting hidden states:  71%|███████   | 708/1000 [00:15<00:03, 73.60it/s]Extracting hidden states:  72%|███████▏  | 716/1000 [00:16<00:03, 73.63it/s]Extracting hidden states:  72%|███████▏  | 724/1000 [00:16<00:03, 73.76it/s]Extracting hidden states:  73%|███████▎  | 732/1000 [00:16<00:03, 73.90it/s]Extracting hidden states:  74%|███████▍  | 740/1000 [00:16<00:03, 73.83it/s]Extracting hidden states:  75%|███████▍  | 748/1000 [00:16<00:03, 73.96it/s]Extracting hidden states:  76%|███████▌  | 756/1000 [00:16<00:03, 74.04it/s]Extracting hidden states:  76%|███████▋  | 764/1000 [00:16<00:03, 74.09it/s]Extracting hidden states:  77%|███████▋  | 772/1000 [00:16<00:03, 74.14it/s]Extracting hidden states:  78%|███████▊  | 780/1000 [00:16<00:02, 74.20it/s]Extracting hidden states:  79%|███████▉  | 788/1000 [00:17<00:02, 73.98it/s]Extracting hidden states:  80%|███████▉  | 796/1000 [00:17<00:02, 74.08it/s]Extracting hidden states:  80%|████████  | 804/1000 [00:17<00:02, 74.15it/s]Extracting hidden states:  81%|████████  | 812/1000 [00:17<00:02, 74.14it/s]Extracting hidden states:  82%|████████▏ | 820/1000 [00:17<00:02, 74.09it/s]Extracting hidden states:  83%|████████▎ | 828/1000 [00:17<00:02, 74.14it/s]Extracting hidden states:  84%|████████▎ | 836/1000 [00:17<00:02, 74.19it/s]Extracting hidden states:  84%|████████▍ | 844/1000 [00:17<00:02, 74.19it/s]Extracting hidden states:  85%|████████▌ | 852/1000 [00:17<00:01, 74.29it/s]Extracting hidden states:  86%|████████▌ | 860/1000 [00:17<00:01, 74.16it/s]Extracting hidden states:  87%|████████▋ | 868/1000 [00:18<00:01, 74.22it/s]Extracting hidden states:  88%|████████▊ | 876/1000 [00:18<00:01, 74.26it/s]Extracting hidden states:  88%|████████▊ | 884/1000 [00:18<00:01, 74.31it/s]Extracting hidden states:  89%|████████▉ | 892/1000 [00:18<00:01, 73.70it/s]Extracting hidden states:  90%|█████████ | 900/1000 [00:18<00:01, 73.83it/s]Extracting hidden states:  91%|█████████ | 908/1000 [00:18<00:01, 73.89it/s]Extracting hidden states:  92%|█████████▏| 916/1000 [00:18<00:01, 73.94it/s]Extracting hidden states:  92%|█████████▏| 924/1000 [00:18<00:01, 73.92it/s]Extracting hidden states:  93%|█████████▎| 932/1000 [00:18<00:00, 73.89it/s]Extracting hidden states:  94%|█████████▍| 940/1000 [00:19<00:00, 73.91it/s]Extracting hidden states:  95%|█████████▍| 948/1000 [00:19<00:00, 74.01it/s]Extracting hidden states:  96%|█████████▌| 956/1000 [00:19<00:00, 74.08it/s]Extracting hidden states:  96%|█████████▋| 964/1000 [00:19<00:00, 74.17it/s]Extracting hidden states:  97%|█████████▋| 972/1000 [00:19<00:00, 74.20it/s]Extracting hidden states:  98%|█████████▊| 980/1000 [00:19<00:00, 74.06it/s]Extracting hidden states:  99%|█████████▉| 988/1000 [00:19<00:00, 73.94it/s]Extracting hidden states: 100%|█████████▉| 996/1000 [00:19<00:00, 74.11it/s]Extracting hidden states: 100%|█████████▉| 999/1000 [00:19<00:00, 50.26it/s]
+Extracted hidden states: 1000 molecules, 8816 atoms
+Extracting hidden states (random):   0%|          | 0/1000 [00:00<?, ?it/s]Extracting hidden states (random):   1%|          | 8/1000 [00:00<00:13, 73.40it/s]Extracting hidden states (random):   2%|▏         | 16/1000 [00:00<00:13, 74.35it/s]Extracting hidden states (random):   2%|▏         | 24/1000 [00:00<00:13, 74.73it/s]Extracting hidden states (random):   3%|▎         | 32/1000 [00:00<00:12, 75.17it/s]Extracting hidden states (random):   4%|▍         | 40/1000 [00:00<00:12, 75.51it/s]Extracting hidden states (random):   5%|▍         | 48/1000 [00:00<00:12, 75.64it/s]Extracting hidden states (random):   6%|▌         | 56/1000 [00:00<00:12, 75.78it/s]Extracting hidden states (random):   6%|▋         | 64/1000 [00:00<00:12, 75.89it/s]Extracting hidden states (random):   7%|▋         | 72/1000 [00:00<00:12, 76.00it/s]Extracting hidden states (random):   8%|▊         | 80/1000 [00:01<00:12, 75.82it/s]Extracting hidden states (random):   9%|▉         | 88/1000 [00:01<00:12, 75.84it/s]Extracting hidden states (random):  10%|▉         | 96/1000 [00:01<00:11, 75.59it/s]Extracting hidden states (random):  10%|█         | 104/1000 [00:01<00:11, 75.64it/s]Extracting hidden states (random):  11%|█         | 112/1000 [00:01<00:11, 75.71it/s]Extracting hidden states (random):  12%|█▏        | 120/1000 [00:01<00:11, 75.81it/s]Extracting hidden states (random):  13%|█▎        | 128/1000 [00:01<00:11, 75.88it/s]Extracting hidden states (random):  14%|█▎        | 136/1000 [00:01<00:11, 75.91it/s]Extracting hidden states (random):  14%|█▍        | 144/1000 [00:01<00:11, 75.88it/s]Extracting hidden states (random):  15%|█▌        | 152/1000 [00:02<00:11, 75.89it/s]Extracting hidden states (random):  16%|█▌        | 160/1000 [00:02<00:11, 75.88it/s]Extracting hidden states (random):  17%|█▋        | 168/1000 [00:02<00:10, 75.80it/s]Extracting hidden states (random):  18%|█▊        | 176/1000 [00:02<00:10, 75.83it/s]Extracting hidden states (random):  18%|█▊        | 184/1000 [00:02<00:10, 75.79it/s]Extracting hidden states (random):  19%|█▉        | 192/1000 [00:02<00:10, 75.77it/s]Extracting hidden states (random):  20%|██        | 200/1000 [00:02<00:10, 75.78it/s]Extracting hidden states (random):  21%|██        | 208/1000 [00:02<00:10, 75.84it/s]Extracting hidden states (random):  22%|██▏       | 216/1000 [00:02<00:10, 75.81it/s]Extracting hidden states (random):  22%|██▏       | 224/1000 [00:02<00:10, 75.80it/s]Extracting hidden states (random):  23%|██▎       | 232/1000 [00:03<00:10, 75.69it/s]Extracting hidden states (random):  24%|██▍       | 240/1000 [00:03<00:10, 75.34it/s]Extracting hidden states (random):  25%|██▍       | 248/1000 [00:03<00:09, 75.50it/s]Extracting hidden states (random):  26%|██▌       | 256/1000 [00:03<00:09, 75.62it/s]Extracting hidden states (random):  26%|██▋       | 264/1000 [00:03<00:09, 75.66it/s]Extracting hidden states (random):  27%|██▋       | 272/1000 [00:03<00:09, 75.73it/s]Extracting hidden states (random):  28%|██▊       | 280/1000 [00:03<00:09, 75.70it/s]Extracting hidden states (random):  29%|██▉       | 288/1000 [00:03<00:09, 75.74it/s]Extracting hidden states (random):  30%|██▉       | 296/1000 [00:03<00:09, 75.75it/s]Extracting hidden states (random):  30%|███       | 304/1000 [00:04<00:09, 75.70it/s]Extracting hidden states (random):  31%|███       | 312/1000 [00:04<00:09, 75.66it/s]Extracting hidden states (random):  32%|███▏      | 320/1000 [00:04<00:08, 75.72it/s]Extracting hidden states (random):  33%|███▎      | 328/1000 [00:04<00:08, 75.60it/s]Extracting hidden states (random):  34%|███▎      | 336/1000 [00:04<00:08, 75.66it/s]Extracting hidden states (random):  34%|███▍      | 344/1000 [00:04<00:08, 75.64it/s]Extracting hidden states (random):  35%|███▌      | 352/1000 [00:04<00:08, 75.67it/s]Extracting hidden states (random):  36%|███▌      | 360/1000 [00:04<00:08, 75.75it/s]Extracting hidden states (random):  37%|███▋      | 368/1000 [00:04<00:08, 75.73it/s]Extracting hidden states (random):  38%|███▊      | 376/1000 [00:04<00:08, 75.75it/s]Extracting hidden states (random):  38%|███▊      | 384/1000 [00:05<00:08, 75.64it/s]Extracting hidden states (random):  39%|███▉      | 392/1000 [00:05<00:08, 75.63it/s]Extracting hidden states (random):  40%|████      | 400/1000 [00:05<00:07, 75.61it/s]Extracting hidden states (random):  41%|████      | 408/1000 [00:05<00:07, 75.66it/s]Extracting hidden states (random):  42%|████▏     | 416/1000 [00:05<00:07, 75.80it/s]Extracting hidden states (random):  42%|████▏     | 424/1000 [00:05<00:07, 75.81it/s]Extracting hidden states (random):  43%|████▎     | 432/1000 [00:05<00:07, 75.88it/s]Extracting hidden states (random):  44%|████▍     | 440/1000 [00:05<00:07, 75.88it/s]Extracting hidden states (random):  45%|████▍     | 448/1000 [00:05<00:07, 75.90it/s]Extracting hidden states (random):  46%|████▌     | 456/1000 [00:06<00:07, 75.82it/s]Extracting hidden states (random):  46%|████▋     | 464/1000 [00:06<00:07, 75.54it/s]Extracting hidden states (random):  47%|████▋     | 472/1000 [00:06<00:07, 75.24it/s]Extracting hidden states (random):  48%|████▊     | 480/1000 [00:06<00:06, 75.08it/s]Extracting hidden states (random):  49%|████▉     | 488/1000 [00:06<00:06, 75.04it/s]Extracting hidden states (random):  50%|████▉     | 496/1000 [00:06<00:06, 75.07it/s]Extracting hidden states (random):  50%|█████     | 504/1000 [00:06<00:06, 75.12it/s]Extracting hidden states (random):  51%|█████     | 512/1000 [00:06<00:06, 75.29it/s]Extracting hidden states (random):  52%|█████▏    | 520/1000 [00:06<00:06, 74.39it/s]Extracting hidden states (random):  53%|█████▎    | 528/1000 [00:06<00:06, 74.39it/s]Extracting hidden states (random):  54%|█████▎    | 536/1000 [00:07<00:06, 74.56it/s]Extracting hidden states (random):  54%|█████▍    | 544/1000 [00:07<00:06, 74.67it/s]Extracting hidden states (random):  55%|█████▌    | 552/1000 [00:07<00:06, 74.59it/s]Extracting hidden states (random):  56%|█████▌    | 560/1000 [00:07<00:05, 74.69it/s]Extracting hidden states (random):  57%|█████▋    | 568/1000 [00:07<00:05, 74.82it/s]Extracting hidden states (random):  58%|█████▊    | 576/1000 [00:07<00:05, 74.92it/s]Extracting hidden states (random):  58%|█████▊    | 584/1000 [00:07<00:05, 74.97it/s]Extracting hidden states (random):  59%|█████▉    | 592/1000 [00:07<00:05, 75.16it/s]Extracting hidden states (random):  60%|██████    | 600/1000 [00:07<00:05, 75.38it/s]Extracting hidden states (random):  61%|██████    | 608/1000 [00:08<00:05, 75.46it/s]Extracting hidden states (random):  62%|██████▏   | 616/1000 [00:08<00:05, 75.50it/s]Extracting hidden states (random):  62%|██████▏   | 624/1000 [00:08<00:05, 75.17it/s]Extracting hidden states (random):  63%|██████▎   | 632/1000 [00:08<00:04, 74.67it/s]Extracting hidden states (random):  64%|██████▍   | 640/1000 [00:08<00:04, 74.59it/s]Extracting hidden states (random):  65%|██████▍   | 648/1000 [00:08<00:04, 74.72it/s]Extracting hidden states (random):  66%|██████▌   | 656/1000 [00:08<00:04, 74.80it/s]Extracting hidden states (random):  66%|██████▋   | 664/1000 [00:08<00:04, 74.90it/s]Extracting hidden states (random):  67%|██████▋   | 672/1000 [00:08<00:04, 74.56it/s]Extracting hidden states (random):  68%|██████▊   | 680/1000 [00:09<00:04, 74.63it/s]Extracting hidden states (random):  69%|██████▉   | 688/1000 [00:09<00:04, 74.82it/s]Extracting hidden states (random):  70%|██████▉   | 696/1000 [00:09<00:04, 74.80it/s]Extracting hidden states (random):  70%|███████   | 704/1000 [00:09<00:03, 74.86it/s]Extracting hidden states (random):  71%|███████   | 712/1000 [00:09<00:03, 74.94it/s]Extracting hidden states (random):  72%|███████▏  | 720/1000 [00:09<00:03, 74.91it/s]Extracting hidden states (random):  73%|███████▎  | 728/1000 [00:09<00:03, 75.02it/s]Extracting hidden states (random):  74%|███████▎  | 736/1000 [00:09<00:03, 75.01it/s]Extracting hidden states (random):  74%|███████▍  | 744/1000 [00:09<00:03, 75.03it/s]Extracting hidden states (random):  75%|███████▌  | 752/1000 [00:09<00:03, 75.02it/s]Extracting hidden states (random):  76%|███████▌  | 760/1000 [00:10<00:03, 75.01it/s]Extracting hidden states (random):  77%|███████▋  | 768/1000 [00:10<00:03, 75.05it/s]Extracting hidden states (random):  78%|███████▊  | 776/1000 [00:10<00:02, 74.96it/s]Extracting hidden states (random):  78%|███████▊  | 784/1000 [00:10<00:02, 74.94it/s]Extracting hidden states (random):  79%|███████▉  | 792/1000 [00:10<00:02, 75.01it/s]Extracting hidden states (random):  80%|████████  | 800/1000 [00:10<00:02, 74.91it/s]Extracting hidden states (random):  81%|████████  | 808/1000 [00:10<00:02, 74.82it/s]Extracting hidden states (random):  82%|████████▏ | 816/1000 [00:10<00:02, 74.83it/s]Extracting hidden states (random):  82%|████████▏ | 824/1000 [00:10<00:02, 75.00it/s]Extracting hidden states (random):  83%|████████▎ | 832/1000 [00:11<00:02, 75.02it/s]Extracting hidden states (random):  84%|████████▍ | 840/1000 [00:11<00:02, 75.12it/s]Extracting hidden states (random):  85%|████████▍ | 848/1000 [00:11<00:02, 74.97it/s]Extracting hidden states (random):  86%|████████▌ | 856/1000 [00:11<00:01, 74.96it/s]Extracting hidden states (random):  86%|████████▋ | 864/1000 [00:11<00:01, 75.00it/s]Extracting hidden states (random):  87%|████████▋ | 872/1000 [00:11<00:01, 74.99it/s]Extracting hidden states (random):  88%|████████▊ | 880/1000 [00:11<00:01, 75.03it/s]Extracting hidden states (random):  89%|████████▉ | 888/1000 [00:11<00:01, 75.01it/s]Extracting hidden states (random):  90%|████████▉ | 896/1000 [00:11<00:01, 75.00it/s]Extracting hidden states (random):  90%|█████████ | 904/1000 [00:12<00:01, 74.78it/s]Extracting hidden states (random):  91%|█████████ | 912/1000 [00:12<00:01, 74.73it/s]Extracting hidden states (random):  92%|█████████▏| 920/1000 [00:12<00:01, 74.77it/s]Extracting hidden states (random):  93%|█████████▎| 928/1000 [00:12<00:00, 74.89it/s]Extracting hidden states (random):  94%|█████████▎| 936/1000 [00:12<00:00, 74.81it/s]Extracting hidden states (random):  94%|█████████▍| 944/1000 [00:12<00:00, 74.84it/s]Extracting hidden states (random):  95%|█████████▌| 952/1000 [00:12<00:00, 74.46it/s]Extracting hidden states (random):  96%|█████████▌| 960/1000 [00:12<00:00, 74.65it/s]Extracting hidden states (random):  97%|█████████▋| 968/1000 [00:12<00:00, 74.85it/s]Extracting hidden states (random):  98%|█████████▊| 976/1000 [00:12<00:00, 74.82it/s]Extracting hidden states (random):  98%|█████████▊| 984/1000 [00:13<00:00, 74.88it/s]Extracting hidden states (random):  99%|█████████▉| 992/1000 [00:13<00:00, 75.01it/s]Extracting hidden states (random): 100%|█████████▉| 999/1000 [00:13<00:00, 75.18it/s]
+Extracted hidden states: 1000 molecules, 8816 atoms [random input]
+
+Probing: atom_type
+  Classes: ['C' 'F' 'N' 'O']
+  Frequency baseline: 0.7256
+  Layer 0: Acc=1.0000, F1=1.0000, RandomAcc=0.6716
+  Layer 1: Acc=1.0000, F1=1.0000, RandomAcc=0.6699
+  Layer 2: Acc=1.0000, F1=1.0000, RandomAcc=0.6642
+  Layer 3: Acc=1.0000, F1=1.0000, RandomAcc=0.6676
+  Layer 4: Acc=1.0000, F1=1.0000, RandomAcc=0.6619
+  Layer 5: Acc=1.0000, F1=1.0000, RandomAcc=0.6659
+  Layer 6: Acc=1.0000, F1=1.0000, RandomAcc=0.6528
+  Layer 7: Acc=1.0000, F1=1.0000, RandomAcc=0.6489
+  Layer 8: Acc=1.0000, F1=1.0000, RandomAcc=0.6591
+  Layer 9: Acc=0.9994, F1=0.9994, RandomAcc=0.6676
+  Layer 10: Acc=1.0000, F1=1.0000, RandomAcc=0.6687
+  Layer 11: Acc=0.9994, F1=0.9994, RandomAcc=0.6585
+  Layer 12: Acc=0.9994, F1=0.9994, RandomAcc=0.6574
+
+Probing: hybridization
+  Classes: ['SP' 'SP2' 'SP3']
+  Frequency baseline: 0.6233
+  Layer 0: Acc=0.7233, F1=0.7016, RandomAcc=0.5455
+  Layer 1: Acc=0.8898, F1=0.8870, RandomAcc=0.5369
+  Layer 2: Acc=0.9006, F1=0.9014, RandomAcc=0.5443
+  Layer 3: Acc=0.9295, F1=0.9295, RandomAcc=0.5278
+  Layer 4: Acc=0.9540, F1=0.9540, RandomAcc=0.5136
+  Layer 5: Acc=0.9631, F1=0.9630, RandomAcc=0.5415
+  Layer 6: Acc=0.9761, F1=0.9761, RandomAcc=0.5153
+  Layer 7: Acc=0.9790, F1=0.9790, RandomAcc=0.5080
+  Layer 8: Acc=0.9795, F1=0.9795, RandomAcc=0.4847
+  Layer 9: Acc=0.9869, F1=0.9869, RandomAcc=0.5062
+  Layer 10: Acc=0.9824, F1=0.9824, RandomAcc=0.5023
+  Layer 11: Acc=0.9847, F1=0.9847, RandomAcc=0.5193
+  Layer 12: Acc=0.9841, F1=0.9841, RandomAcc=0.4955
+
+Probing: is_aromatic
+  Classes: [0 1]
+  Frequency baseline: 0.8920
+  Layer 0: Acc=0.9500, F1=0.9431, RandomAcc=0.8693
+  Layer 1: Acc=0.9676, F1=0.9666, RandomAcc=0.8574
+  Layer 2: Acc=0.9705, F1=0.9692, RandomAcc=0.8562
+  Layer 3: Acc=0.9699, F1=0.9687, RandomAcc=0.8256
+  Layer 4: Acc=0.9716, F1=0.9706, RandomAcc=0.8205
+  Layer 5: Acc=0.9744, F1=0.9735, RandomAcc=0.8227
+  Layer 6: Acc=0.9744, F1=0.9736, RandomAcc=0.8210
+  Layer 7: Acc=0.9767, F1=0.9760, RandomAcc=0.8102
+  Layer 8: Acc=0.9767, F1=0.9762, RandomAcc=0.8273
+  Layer 9: Acc=0.9778, F1=0.9774, RandomAcc=0.8426
+  Layer 10: Acc=0.9807, F1=0.9804, RandomAcc=0.8477
+  Layer 11: Acc=0.9778, F1=0.9771, RandomAcc=0.8273
+  Layer 12: Acc=0.9778, F1=0.9771, RandomAcc=0.8170
+
+Probing: is_in_ring
+  Classes: [0 1]
+  Frequency baseline: 0.6040
+  Layer 0: Acc=0.6710, F1=0.6511, RandomAcc=0.5364
+  Layer 1: Acc=0.8580, F1=0.8575, RandomAcc=0.5250
+  Layer 2: Acc=0.8761, F1=0.8764, RandomAcc=0.5256
+  Layer 3: Acc=0.9045, F1=0.9044, RandomAcc=0.5449
+  Layer 4: Acc=0.9443, F1=0.9444, RandomAcc=0.5449
+  Layer 5: Acc=0.9716, F1=0.9716, RandomAcc=0.5420
+  Layer 6: Acc=0.9830, F1=0.9830, RandomAcc=0.5511
+  Layer 7: Acc=0.9920, F1=0.9920, RandomAcc=0.5449
+  Layer 8: Acc=0.9932, F1=0.9932, RandomAcc=0.5261
+  Layer 9: Acc=0.9926, F1=0.9926, RandomAcc=0.5369
+  Layer 10: Acc=0.9949, F1=0.9949, RandomAcc=0.5233
+  Layer 11: Acc=0.9932, F1=0.9932, RandomAcc=0.5364
+  Layer 12: Acc=0.9892, F1=0.9892, RandomAcc=0.5250
+
+Probing: chiral_tag
+  Classes: ['CHI_UNSPECIFIED']
+  Skipped (only one class in training set)
+
+Probing: degree
+  Classes: [1 2 3 4]
+  Frequency baseline: 0.4188
+  Layer 0: Acc=0.4653, F1=0.3949, RandomAcc=0.3210
+  Layer 1: Acc=0.6210, F1=0.6153, RandomAcc=0.3239
+  Layer 2: Acc=0.6580, F1=0.6537, RandomAcc=0.3227
+  Layer 3: Acc=0.7028, F1=0.7018, RandomAcc=0.3455
+  Layer 4: Acc=0.7937, F1=0.7947, RandomAcc=0.3625
+  Layer 5: Acc=0.8455, F1=0.8458, RandomAcc=0.3608
+  Layer 6: Acc=0.9006, F1=0.9005, RandomAcc=0.3750
+  Layer 7: Acc=0.9392, F1=0.9392, RandomAcc=0.3903
+  Layer 8: Acc=0.9631, F1=0.9631, RandomAcc=0.3807
+  Layer 9: Acc=0.9750, F1=0.9750, RandomAcc=0.3812
+  Layer 10: Acc=0.9761, F1=0.9762, RandomAcc=0.3517
+  Layer 11: Acc=0.9727, F1=0.9728, RandomAcc=0.3631
+  Layer 12: Acc=0.9682, F1=0.9682, RandomAcc=0.3585
+
+Probing: formal_charge
+  Classes: [-1  0  1]
+  Frequency baseline: 0.9943
+  Layer 0: Acc=1.0000, F1=1.0000, RandomAcc=0.9943
+  Layer 1: Acc=1.0000, F1=1.0000, RandomAcc=0.9943
+  Layer 2: Acc=1.0000, F1=1.0000, RandomAcc=0.9943
+  Layer 3: Acc=1.0000, F1=1.0000, RandomAcc=0.9943
+  Layer 4: Acc=1.0000, F1=1.0000, RandomAcc=0.9943
+  Layer 5: Acc=1.0000, F1=1.0000, RandomAcc=0.9943
+  Layer 6: Acc=1.0000, F1=1.0000, RandomAcc=0.9943
+  Layer 7: Acc=1.0000, F1=1.0000, RandomAcc=0.9943
+  Layer 8: Acc=1.0000, F1=1.0000, RandomAcc=0.9943
+  Layer 9: Acc=1.0000, F1=1.0000, RandomAcc=0.9943
+  Layer 10: Acc=1.0000, F1=1.0000, RandomAcc=0.9943
+  Layer 11: Acc=0.9994, F1=0.9994, RandomAcc=0.9943
+  Layer 12: Acc=1.0000, F1=1.0000, RandomAcc=0.9943
+
+Probing: total_valence
+  Classes: [1 2 3 4]
+  Frequency baseline: 0.7278
+  Layer 0: Acc=1.0000, F1=1.0000, RandomAcc=0.6733
+  Layer 1: Acc=1.0000, F1=1.0000, RandomAcc=0.6659
+  Layer 2: Acc=0.9994, F1=0.9994, RandomAcc=0.6608
+  Layer 3: Acc=0.9994, F1=0.9994, RandomAcc=0.6608
+  Layer 4: Acc=1.0000, F1=1.0000, RandomAcc=0.6653
+  Layer 5: Acc=1.0000, F1=1.0000, RandomAcc=0.6653
+  Layer 6: Acc=1.0000, F1=1.0000, RandomAcc=0.6557
+  Layer 7: Acc=0.9989, F1=0.9989, RandomAcc=0.6517
+  Layer 8: Acc=0.9989, F1=0.9989, RandomAcc=0.6614
+  Layer 9: Acc=0.9989, F1=0.9989, RandomAcc=0.6676
+  Layer 10: Acc=0.9994, F1=0.9994, RandomAcc=0.6699
+  Layer 11: Acc=0.9989, F1=0.9989, RandomAcc=0.6517
+  Layer 12: Acc=0.9994, F1=0.9994, RandomAcc=0.6631
+  Saved: /home/zetong/smited_molformer/results/molformer/figures/qm9/exp2_probing_atom_type.png
+  Saved: /home/zetong/smited_molformer/results/molformer/figures/qm9/exp2_probing_hybridization.png
+  Saved: /home/zetong/smited_molformer/results/molformer/figures/qm9/exp2_probing_is_aromatic.png
+  Saved: /home/zetong/smited_molformer/results/molformer/figures/qm9/exp2_probing_is_in_ring.png
+  Saved: /home/zetong/smited_molformer/results/molformer/figures/qm9/exp2_probing_degree.png
+  Saved: /home/zetong/smited_molformer/results/molformer/figures/qm9/exp2_probing_formal_charge.png
+  Saved: /home/zetong/smited_molformer/results/molformer/figures/qm9/exp2_probing_total_valence.png
+Results saved to: /home/zetong/smited_molformer/results/molformer/exp2_probing_qm9.json
+Loaded 1000 SMILES from esol.csv
+
+=================================================================
+Dataset: ESOL  (1000 SMILES)
+=================================================================
+Extracting hidden states:   0%|          | 0/1000 [00:00<?, ?it/s]Extracting hidden states:   1%|          | 8/1000 [00:00<00:13, 71.18it/s]Extracting hidden states:   2%|▏         | 16/1000 [00:00<00:13, 72.92it/s]Extracting hidden states:   2%|▏         | 24/1000 [00:00<00:13, 73.22it/s]Extracting hidden states:   3%|▎         | 32/1000 [00:00<00:13, 73.91it/s]Extracting hidden states:   4%|▍         | 40/1000 [00:00<00:12, 74.10it/s]Extracting hidden states:   5%|▍         | 48/1000 [00:00<00:12, 73.93it/s]Extracting hidden states:   6%|▌         | 56/1000 [00:00<00:12, 74.19it/s]Extracting hidden states:   6%|▋         | 64/1000 [00:00<00:12, 74.16it/s]Extracting hidden states:   7%|▋         | 72/1000 [00:00<00:12, 74.43it/s]Extracting hidden states:   8%|▊         | 80/1000 [00:01<00:12, 74.47it/s]Extracting hidden states:   9%|▉         | 88/1000 [00:01<00:12, 74.53it/s]Extracting hidden states:  10%|▉         | 96/1000 [00:01<00:12, 74.29it/s]Extracting hidden states:  10%|█         | 104/1000 [00:01<00:12, 74.33it/s]Extracting hidden states:  11%|█         | 112/1000 [00:01<00:11, 74.03it/s]Extracting hidden states:  12%|█▏        | 120/1000 [00:01<00:11, 73.79it/s]Extracting hidden states:  13%|█▎        | 128/1000 [00:01<00:11, 73.99it/s]Extracting hidden states:  14%|█▎        | 136/1000 [00:01<00:11, 73.92it/s]Extracting hidden states:  14%|█▍        | 144/1000 [00:01<00:11, 73.76it/s]Extracting hidden states:  15%|█▌        | 152/1000 [00:02<00:11, 74.02it/s]Extracting hidden states:  16%|█▌        | 160/1000 [00:02<00:11, 73.98it/s]Extracting hidden states:  17%|█▋        | 168/1000 [00:02<00:11, 74.09it/s]Extracting hidden states:  18%|█▊        | 176/1000 [00:02<00:11, 74.38it/s]Extracting hidden states:  18%|█▊        | 184/1000 [00:02<00:10, 74.53it/s]Extracting hidden states:  19%|█▉        | 192/1000 [00:02<00:10, 74.54it/s]Extracting hidden states:  20%|██        | 200/1000 [00:02<00:10, 74.29it/s]Extracting hidden states:  21%|██        | 208/1000 [00:02<00:10, 74.50it/s]Extracting hidden states:  22%|██▏       | 216/1000 [00:02<00:10, 74.40it/s]Extracting hidden states:  22%|██▏       | 224/1000 [00:03<00:10, 74.67it/s]Extracting hidden states:  23%|██▎       | 232/1000 [00:03<00:10, 74.47it/s]Extracting hidden states:  24%|██▍       | 240/1000 [00:03<00:10, 74.47it/s]Extracting hidden states:  25%|██▍       | 248/1000 [00:03<00:10, 74.54it/s]Extracting hidden states:  26%|██▌       | 256/1000 [00:03<00:09, 74.76it/s]Extracting hidden states:  26%|██▋       | 264/1000 [00:03<00:09, 74.48it/s]Extracting hidden states:  27%|██▋       | 272/1000 [00:03<00:09, 74.59it/s]Extracting hidden states:  28%|██▊       | 280/1000 [00:03<00:09, 74.78it/s]Extracting hidden states:  29%|██▉       | 288/1000 [00:03<00:09, 74.90it/s]Extracting hidden states:  30%|██▉       | 296/1000 [00:03<00:09, 74.51it/s]Extracting hidden states:  30%|███       | 304/1000 [00:04<00:09, 74.36it/s]Extracting hidden states:  31%|███       | 312/1000 [00:04<00:09, 74.54it/s]Extracting hidden states:  32%|███▏      | 320/1000 [00:04<00:09, 74.53it/s]Extracting hidden states:  33%|███▎      | 328/1000 [00:04<00:08, 74.76it/s]Extracting hidden states:  34%|███▎      | 336/1000 [00:04<00:08, 74.49it/s]Extracting hidden states:  34%|███▍      | 344/1000 [00:04<00:08, 74.21it/s]Extracting hidden states:  35%|███▌      | 352/1000 [00:04<00:08, 73.98it/s]Extracting hidden states:  36%|███▌      | 360/1000 [00:04<00:08, 74.05it/s]Extracting hidden states:  37%|███▋      | 368/1000 [00:04<00:08, 74.38it/s]Extracting hidden states:  38%|███▊      | 376/1000 [00:05<00:08, 74.49it/s]Extracting hidden states:  38%|███▊      | 384/1000 [00:05<00:08, 74.60it/s]Extracting hidden states:  39%|███▉      | 392/1000 [00:05<00:08, 74.71it/s]Extracting hidden states:  40%|████      | 400/1000 [00:05<00:08, 74.70it/s]Extracting hidden states:  41%|████      | 408/1000 [00:05<00:07, 74.81it/s]Extracting hidden states:  42%|████▏     | 416/1000 [00:05<00:07, 74.71it/s]Extracting hidden states:  42%|████▏     | 424/1000 [00:05<00:07, 74.45it/s]Extracting hidden states:  43%|████▎     | 432/1000 [00:05<00:07, 74.58it/s]Extracting hidden states:  44%|████▍     | 440/1000 [00:05<00:07, 74.27it/s]Extracting hidden states:  45%|████▍     | 448/1000 [00:06<00:07, 74.07it/s]Extracting hidden states:  46%|████▌     | 456/1000 [00:06<00:07, 73.97it/s]Extracting hidden states:  46%|████▋     | 464/1000 [00:06<00:07, 74.04it/s]Extracting hidden states:  47%|████▋     | 472/1000 [00:06<00:07, 74.11it/s]Extracting hidden states:  48%|████▊     | 480/1000 [00:06<00:07, 74.18it/s]Extracting hidden states:  49%|████▉     | 488/1000 [00:06<00:06, 74.31it/s]Extracting hidden states:  50%|████▉     | 496/1000 [00:06<00:06, 74.33it/s]Extracting hidden states:  50%|█████     | 504/1000 [00:06<00:06, 74.60it/s]Extracting hidden states:  51%|█████     | 512/1000 [00:06<00:06, 74.56it/s]Extracting hidden states:  52%|█████▏    | 520/1000 [00:06<00:06, 74.69it/s]Extracting hidden states:  53%|█████▎    | 528/1000 [00:07<00:06, 74.57it/s]Extracting hidden states:  54%|█████▎    | 536/1000 [00:07<00:06, 74.57it/s]Extracting hidden states:  54%|█████▍    | 544/1000 [00:07<00:06, 74.52it/s]Extracting hidden states:  55%|█████▌    | 552/1000 [00:07<00:06, 74.35it/s]Extracting hidden states:  56%|█████▌    | 560/1000 [00:07<00:05, 74.65it/s]Extracting hidden states:  57%|█████▋    | 568/1000 [00:07<00:05, 74.67it/s]Extracting hidden states:  58%|█████▊    | 576/1000 [00:07<00:05, 74.43it/s]Extracting hidden states:  58%|█████▊    | 584/1000 [00:07<00:05, 74.43it/s]Extracting hidden states:  59%|█████▉    | 592/1000 [00:07<00:05, 74.59it/s]Extracting hidden states:  60%|██████    | 600/1000 [00:08<00:05, 74.70it/s]Extracting hidden states:  61%|██████    | 608/1000 [00:08<00:05, 74.74it/s]Extracting hidden states:  62%|██████▏   | 616/1000 [00:08<00:05, 74.75it/s]Extracting hidden states:  62%|██████▏   | 624/1000 [00:08<00:05, 74.77it/s]Extracting hidden states:  63%|██████▎   | 632/1000 [00:08<00:04, 74.76it/s]Extracting hidden states:  64%|██████▍   | 640/1000 [00:08<00:04, 74.85it/s]Extracting hidden states:  65%|██████▍   | 648/1000 [00:08<00:04, 74.73it/s]Extracting hidden states:  66%|██████▌   | 656/1000 [00:08<00:04, 74.21it/s]Extracting hidden states:  66%|██████▋   | 664/1000 [00:08<00:04, 74.22it/s]Extracting hidden states:  67%|██████▋   | 672/1000 [00:09<00:04, 74.12it/s]Extracting hidden states:  68%|██████▊   | 680/1000 [00:09<00:04, 73.98it/s]Extracting hidden states:  69%|██████▉   | 688/1000 [00:09<00:04, 74.24it/s]Extracting hidden states:  70%|██████▉   | 696/1000 [00:09<00:04, 74.20it/s]Extracting hidden states:  70%|███████   | 704/1000 [00:09<00:04, 73.93it/s]Extracting hidden states:  71%|███████   | 712/1000 [00:09<00:03, 73.90it/s]Extracting hidden states:  72%|███████▏  | 720/1000 [00:09<00:03, 73.81it/s]Extracting hidden states:  73%|███████▎  | 728/1000 [00:09<00:03, 73.56it/s]Extracting hidden states:  74%|███████▎  | 736/1000 [00:09<00:03, 73.52it/s]Extracting hidden states:  74%|███████▍  | 744/1000 [00:10<00:03, 73.61it/s]Extracting hidden states:  75%|███████▌  | 752/1000 [00:10<00:03, 73.70it/s]Extracting hidden states:  76%|███████▌  | 760/1000 [00:10<00:03, 73.81it/s]Extracting hidden states:  77%|███████▋  | 768/1000 [00:10<00:03, 73.67it/s]Extracting hidden states:  78%|███████▊  | 776/1000 [00:10<00:03, 73.53it/s]Extracting hidden states:  78%|███████▊  | 784/1000 [00:10<00:02, 73.45it/s]Extracting hidden states:  79%|███████▉  | 792/1000 [00:10<00:02, 73.10it/s]Extracting hidden states:  80%|████████  | 800/1000 [00:10<00:02, 72.70it/s]Extracting hidden states:  81%|████████  | 808/1000 [00:10<00:02, 72.73it/s]Extracting hidden states:  82%|████████▏ | 816/1000 [00:10<00:02, 72.59it/s]Extracting hidden states:  82%|████████▏ | 824/1000 [00:11<00:02, 73.07it/s]Extracting hidden states:  83%|████████▎ | 832/1000 [00:11<00:02, 72.84it/s]Extracting hidden states:  84%|████████▍ | 840/1000 [00:11<00:02, 73.22it/s]Extracting hidden states:  85%|████████▍ | 848/1000 [00:11<00:02, 73.17it/s]Extracting hidden states:  86%|████████▌ | 856/1000 [00:11<00:01, 73.35it/s]Extracting hidden states:  86%|████████▋ | 864/1000 [00:11<00:01, 73.21it/s]Extracting hidden states:  87%|████████▋ | 872/1000 [00:11<00:01, 73.05it/s]Extracting hidden states:  88%|████████▊ | 880/1000 [00:11<00:01, 73.24it/s]Extracting hidden states:  89%|████████▉ | 888/1000 [00:11<00:01, 73.34it/s]Extracting hidden states:  90%|████████▉ | 896/1000 [00:12<00:01, 72.90it/s]Extracting hidden states:  90%|█████████ | 904/1000 [00:12<00:01, 73.07it/s]Extracting hidden states:  91%|█████████ | 912/1000 [00:12<00:01, 73.07it/s]Extracting hidden states:  92%|█████████▏| 920/1000 [00:12<00:01, 73.18it/s]Extracting hidden states:  93%|█████████▎| 928/1000 [00:12<00:00, 73.23it/s]Extracting hidden states:  94%|█████████▎| 936/1000 [00:12<00:00, 73.42it/s]Extracting hidden states:  94%|█████████▍| 944/1000 [00:12<00:00, 73.50it/s]Extracting hidden states:  95%|█████████▌| 952/1000 [00:12<00:00, 73.24it/s]Extracting hidden states:  96%|█████████▌| 960/1000 [00:12<00:00, 73.41it/s]Extracting hidden states:  97%|█████████▋| 968/1000 [00:13<00:00, 73.41it/s]Extracting hidden states:  98%|█████████▊| 976/1000 [00:13<00:00, 73.36it/s]Extracting hidden states:  98%|█████████▊| 984/1000 [00:13<00:00, 73.28it/s]Extracting hidden states:  99%|█████████▉| 992/1000 [00:13<00:00, 73.54it/s]Extracting hidden states: 100%|█████████▉| 999/1000 [00:13<00:00, 73.96it/s]
+Extracted hidden states: 1000 molecules, 13301 atoms
+Extracting hidden states (random):   0%|          | 0/1000 [00:00<?, ?it/s]Extracting hidden states (random):   1%|          | 8/1000 [00:00<00:13, 74.99it/s]Extracting hidden states (random):   2%|▏         | 16/1000 [00:00<00:13, 75.13it/s]Extracting hidden states (random):   2%|▏         | 24/1000 [00:00<00:12, 75.14it/s]Extracting hidden states (random):   3%|▎         | 32/1000 [00:00<00:12, 75.40it/s]Extracting hidden states (random):   4%|▍         | 40/1000 [00:00<00:12, 75.45it/s]Extracting hidden states (random):   5%|▍         | 48/1000 [00:00<00:12, 74.93it/s]Extracting hidden states (random):   6%|▌         | 56/1000 [00:00<00:12, 75.11it/s]Extracting hidden states (random):   6%|▋         | 64/1000 [00:00<00:12, 75.20it/s]Extracting hidden states (random):   7%|▋         | 72/1000 [00:00<00:12, 75.43it/s]Extracting hidden states (random):   8%|▊         | 80/1000 [00:01<00:12, 75.49it/s]Extracting hidden states (random):   9%|▉         | 88/1000 [00:01<00:12, 75.52it/s]Extracting hidden states (random):  10%|▉         | 96/1000 [00:01<00:12, 75.28it/s]Extracting hidden states (random):  10%|█         | 104/1000 [00:01<00:11, 75.21it/s]Extracting hidden states (random):  11%|█         | 112/1000 [00:01<00:11, 74.94it/s]Extracting hidden states (random):  12%|█▏        | 120/1000 [00:01<00:11, 74.70it/s]Extracting hidden states (random):  13%|█▎        | 128/1000 [00:01<00:11, 74.81it/s]Extracting hidden states (random):  14%|█▎        | 136/1000 [00:01<00:11, 74.71it/s]Extracting hidden states (random):  14%|█▍        | 144/1000 [00:01<00:11, 74.56it/s]Extracting hidden states (random):  15%|█▌        | 152/1000 [00:02<00:11, 74.69it/s]Extracting hidden states (random):  16%|█▌        | 160/1000 [00:02<00:11, 74.51it/s]Extracting hidden states (random):  17%|█▋        | 168/1000 [00:02<00:11, 74.49it/s]Extracting hidden states (random):  18%|█▊        | 176/1000 [00:02<00:11, 74.55it/s]Extracting hidden states (random):  18%|█▊        | 184/1000 [00:02<00:10, 74.56it/s]Extracting hidden states (random):  19%|█▉        | 192/1000 [00:02<00:10, 74.54it/s]Extracting hidden states (random):  20%|██        | 200/1000 [00:02<00:10, 74.39it/s]Extracting hidden states (random):  21%|██        | 208/1000 [00:02<00:10, 74.46it/s]Extracting hidden states (random):  22%|██▏       | 216/1000 [00:02<00:10, 74.51it/s]Extracting hidden states (random):  22%|██▏       | 224/1000 [00:02<00:10, 74.71it/s]Extracting hidden states (random):  23%|██▎       | 232/1000 [00:03<00:10, 74.77it/s]Extracting hidden states (random):  24%|██▍       | 240/1000 [00:03<00:10, 74.91it/s]Extracting hidden states (random):  25%|██▍       | 248/1000 [00:03<00:10, 75.10it/s]Extracting hidden states (random):  26%|██▌       | 256/1000 [00:03<00:09, 75.20it/s]Extracting hidden states (random):  26%|██▋       | 264/1000 [00:03<00:09, 74.91it/s]Extracting hidden states (random):  27%|██▋       | 272/1000 [00:03<00:09, 75.01it/s]Extracting hidden states (random):  28%|██▊       | 280/1000 [00:03<00:09, 74.96it/s]Extracting hidden states (random):  29%|██▉       | 288/1000 [00:03<00:09, 74.86it/s]Extracting hidden states (random):  30%|██▉       | 296/1000 [00:03<00:09, 74.53it/s]Extracting hidden states (random):  30%|███       | 304/1000 [00:04<00:09, 74.50it/s]Extracting hidden states (random):  31%|███       | 312/1000 [00:04<00:09, 74.59it/s]Extracting hidden states (random):  32%|███▏      | 320/1000 [00:04<00:09, 74.51it/s]Extracting hidden states (random):  33%|███▎      | 328/1000 [00:04<00:09, 74.57it/s]Extracting hidden states (random):  34%|███▎      | 336/1000 [00:04<00:08, 74.40it/s]Extracting hidden states (random):  34%|███▍      | 344/1000 [00:04<00:08, 74.36it/s]Extracting hidden states (random):  35%|███▌      | 352/1000 [00:04<00:08, 74.20it/s]Extracting hidden states (random):  36%|███▌      | 360/1000 [00:04<00:08, 74.23it/s]Extracting hidden states (random):  37%|███▋      | 368/1000 [00:04<00:08, 74.46it/s]Extracting hidden states (random):  38%|███▊      | 376/1000 [00:05<00:08, 74.68it/s]Extracting hidden states (random):  38%|███▊      | 384/1000 [00:05<00:08, 74.68it/s]Extracting hidden states (random):  39%|███▉      | 392/1000 [00:05<00:08, 74.87it/s]Extracting hidden states (random):  40%|████      | 400/1000 [00:05<00:08, 74.74it/s]Extracting hidden states (random):  41%|████      | 408/1000 [00:05<00:07, 74.81it/s]Extracting hidden states (random):  42%|████▏     | 416/1000 [00:05<00:07, 74.78it/s]Extracting hidden states (random):  42%|████▏     | 424/1000 [00:05<00:07, 74.59it/s]Extracting hidden states (random):  43%|████▎     | 432/1000 [00:05<00:07, 74.75it/s]Extracting hidden states (random):  44%|████▍     | 440/1000 [00:05<00:07, 74.79it/s]Extracting hidden states (random):  45%|████▍     | 448/1000 [00:05<00:07, 74.95it/s]Extracting hidden states (random):  46%|████▌     | 456/1000 [00:06<00:07, 75.04it/s]Extracting hidden states (random):  46%|████▋     | 464/1000 [00:06<00:07, 75.09it/s]Extracting hidden states (random):  47%|████▋     | 472/1000 [00:06<00:07, 75.05it/s]Extracting hidden states (random):  48%|████▊     | 480/1000 [00:06<00:06, 75.02it/s]Extracting hidden states (random):  49%|████▉     | 488/1000 [00:06<00:06, 75.18it/s]Extracting hidden states (random):  50%|████▉     | 496/1000 [00:06<00:06, 74.94it/s]Extracting hidden states (random):  50%|█████     | 504/1000 [00:06<00:06, 74.78it/s]Extracting hidden states (random):  51%|█████     | 512/1000 [00:06<00:06, 74.81it/s]Extracting hidden states (random):  52%|█████▏    | 520/1000 [00:06<00:06, 74.96it/s]Extracting hidden states (random):  53%|█████▎    | 528/1000 [00:07<00:06, 74.77it/s]Extracting hidden states (random):  54%|█████▎    | 536/1000 [00:07<00:06, 74.84it/s]Extracting hidden states (random):  54%|█████▍    | 544/1000 [00:07<00:06, 74.59it/s]Extracting hidden states (random):  55%|█████▌    | 552/1000 [00:07<00:06, 74.41it/s]Extracting hidden states (random):  56%|█████▌    | 560/1000 [00:07<00:05, 74.33it/s]Extracting hidden states (random):  57%|█████▋    | 568/1000 [00:07<00:05, 74.39it/s]Extracting hidden states (random):  58%|█████▊    | 576/1000 [00:07<00:05, 74.35it/s]Extracting hidden states (random):  58%|█████▊    | 584/1000 [00:07<00:05, 74.36it/s]Extracting hidden states (random):  59%|█████▉    | 592/1000 [00:07<00:05, 74.43it/s]Extracting hidden states (random):  60%|██████    | 600/1000 [00:08<00:05, 74.59it/s]Extracting hidden states (random):  61%|██████    | 608/1000 [00:08<00:05, 74.55it/s]Extracting hidden states (random):  62%|██████▏   | 616/1000 [00:08<00:05, 74.71it/s]Extracting hidden states (random):  62%|██████▏   | 624/1000 [00:08<00:05, 74.79it/s]Extracting hidden states (random):  63%|██████▎   | 632/1000 [00:08<00:04, 74.61it/s]Extracting hidden states (random):  64%|██████▍   | 640/1000 [00:08<00:04, 74.73it/s]Extracting hidden states (random):  65%|██████▍   | 648/1000 [00:08<00:04, 74.92it/s]Extracting hidden states (random):  66%|██████▌   | 656/1000 [00:08<00:04, 74.92it/s]Extracting hidden states (random):  66%|██████▋   | 664/1000 [00:08<00:04, 75.05it/s]Extracting hidden states (random):  67%|██████▋   | 672/1000 [00:08<00:04, 75.14it/s]Extracting hidden states (random):  68%|██████▊   | 680/1000 [00:09<00:04, 75.14it/s]Extracting hidden states (random):  69%|██████▉   | 688/1000 [00:09<00:04, 75.39it/s]Extracting hidden states (random):  70%|██████▉   | 696/1000 [00:09<00:04, 75.37it/s]Extracting hidden states (random):  70%|███████   | 704/1000 [00:09<00:03, 75.39it/s]Extracting hidden states (random):  71%|███████   | 712/1000 [00:09<00:03, 75.18it/s]Extracting hidden states (random):  72%|███████▏  | 720/1000 [00:09<00:03, 75.27it/s]Extracting hidden states (random):  73%|███████▎  | 728/1000 [00:09<00:03, 74.93it/s]Extracting hidden states (random):  74%|███████▎  | 736/1000 [00:09<00:03, 74.73it/s]Extracting hidden states (random):  74%|███████▍  | 744/1000 [00:09<00:03, 74.62it/s]Extracting hidden states (random):  75%|███████▌  | 752/1000 [00:10<00:03, 74.57it/s]Extracting hidden states (random):  76%|███████▌  | 760/1000 [00:10<00:03, 74.52it/s]Extracting hidden states (random):  77%|███████▋  | 768/1000 [00:10<00:03, 74.62it/s]Extracting hidden states (random):  78%|███████▊  | 776/1000 [00:10<00:02, 74.67it/s]Extracting hidden states (random):  78%|███████▊  | 784/1000 [00:10<00:02, 74.39it/s]Extracting hidden states (random):  79%|███████▉  | 792/1000 [00:10<00:02, 74.27it/s]Extracting hidden states (random):  80%|████████  | 800/1000 [00:10<00:02, 74.06it/s]Extracting hidden states (random):  81%|████████  | 808/1000 [00:10<00:02, 74.01it/s]Extracting hidden states (random):  82%|████████▏ | 816/1000 [00:10<00:02, 73.86it/s]Extracting hidden states (random):  82%|████████▏ | 824/1000 [00:11<00:02, 74.18it/s]Extracting hidden states (random):  83%|████████▎ | 832/1000 [00:11<00:02, 74.05it/s]Extracting hidden states (random):  84%|████████▍ | 840/1000 [00:11<00:02, 74.29it/s]Extracting hidden states (random):  85%|████████▍ | 848/1000 [00:11<00:02, 74.20it/s]Extracting hidden states (random):  86%|████████▌ | 856/1000 [00:11<00:01, 74.35it/s]Extracting hidden states (random):  86%|████████▋ | 864/1000 [00:11<00:01, 74.08it/s]Extracting hidden states (random):  87%|████████▋ | 872/1000 [00:11<00:01, 74.09it/s]Extracting hidden states (random):  88%|████████▊ | 880/1000 [00:11<00:01, 74.25it/s]Extracting hidden states (random):  89%|████████▉ | 888/1000 [00:11<00:01, 74.28it/s]Extracting hidden states (random):  90%|████████▉ | 896/1000 [00:11<00:01, 73.93it/s]Extracting hidden states (random):  90%|█████████ | 904/1000 [00:12<00:01, 74.01it/s]Extracting hidden states (random):  91%|█████████ | 912/1000 [00:12<00:01, 74.13it/s]Extracting hidden states (random):  92%|█████████▏| 920/1000 [00:12<00:01, 74.13it/s]Extracting hidden states (random):  93%|█████████▎| 928/1000 [00:12<00:00, 74.19it/s]Extracting hidden states (random):  94%|█████████▎| 936/1000 [00:12<00:00, 74.29it/s]Extracting hidden states (random):  94%|█████████▍| 944/1000 [00:12<00:00, 74.36it/s]Extracting hidden states (random):  95%|█████████▌| 952/1000 [00:12<00:00, 74.26it/s]Extracting hidden states (random):  96%|█████████▌| 960/1000 [00:12<00:00, 74.34it/s]Extracting hidden states (random):  97%|█████████▋| 968/1000 [00:12<00:00, 74.27it/s]Extracting hidden states (random):  98%|█████████▊| 976/1000 [00:13<00:00, 74.26it/s]Extracting hidden states (random):  98%|█████████▊| 984/1000 [00:13<00:00, 74.27it/s]Extracting hidden states (random):  99%|█████████▉| 992/1000 [00:13<00:00, 74.41it/s]Extracting hidden states (random): 100%|█████████▉| 999/1000 [00:13<00:00, 74.59it/s]
+Extracted hidden states: 1000 molecules, 13301 atoms [random input]
+
+Probing: atom_type
+  Classes: ['Br' 'C' 'Cl' 'F' 'I' 'N' 'O' 'P' 'S']
+  Frequency baseline: 0.7549
+  Layer 0: Acc=1.0000, F1=1.0000, RandomAcc=0.6984
+  Layer 1: Acc=1.0000, F1=1.0000, RandomAcc=0.7003
+  Layer 2: Acc=1.0000, F1=1.0000, RandomAcc=0.6951
+  Layer 3: Acc=1.0000, F1=1.0000, RandomAcc=0.6857
+  Layer 4: Acc=1.0000, F1=1.0000, RandomAcc=0.6872
+  Layer 5: Acc=1.0000, F1=1.0000, RandomAcc=0.6932
+  Layer 6: Acc=1.0000, F1=1.0000, RandomAcc=0.6973
+  Layer 7: Acc=0.9996, F1=0.9996, RandomAcc=0.6936
+  Layer 8: Acc=0.9996, F1=0.9996, RandomAcc=0.6835
+  Layer 9: Acc=0.9996, F1=0.9996, RandomAcc=0.6861
+  Layer 10: Acc=0.9996, F1=0.9996, RandomAcc=0.6842
+  Layer 11: Acc=0.9996, F1=0.9996, RandomAcc=0.6760
+  Layer 12: Acc=0.9993, F1=0.9993, RandomAcc=0.6611
+
+Probing: hybridization
+  Classes: ['SP' 'SP2' 'SP3']
+  Frequency baseline: 0.5639
+  Layer 0: Acc=0.8886, F1=0.8848, RandomAcc=0.5362
+  Layer 1: Acc=0.9260, F1=0.9238, RandomAcc=0.5291
+  Layer 2: Acc=0.9350, F1=0.9346, RandomAcc=0.5396
+  Layer 3: Acc=0.9537, F1=0.9532, RandomAcc=0.5546
+  Layer 4: Acc=0.9742, F1=0.9742, RandomAcc=0.5624
+  Layer 5: Acc=0.9843, F1=0.9843, RandomAcc=0.5527
+  Layer 6: Acc=0.9892, F1=0.9892, RandomAcc=0.5639
+  Layer 7: Acc=0.9922, F1=0.9922, RandomAcc=0.5448
+  Layer 8: Acc=0.9940, F1=0.9940, RandomAcc=0.5598
+  Layer 9: Acc=0.9951, F1=0.9951, RandomAcc=0.5426
+  Layer 10: Acc=0.9955, F1=0.9955, RandomAcc=0.5594
+  Layer 11: Acc=0.9929, F1=0.9929, RandomAcc=0.5400
+  Layer 12: Acc=0.9910, F1=0.9910, RandomAcc=0.5441
+
+Probing: is_aromatic
+  Classes: [0 1]
+  Frequency baseline: 0.6398
+  Layer 0: Acc=0.9955, F1=0.9955, RandomAcc=0.5744
+  Layer 1: Acc=0.9959, F1=0.9959, RandomAcc=0.5688
+  Layer 2: Acc=0.9955, F1=0.9955, RandomAcc=0.5523
+  Layer 3: Acc=0.9955, F1=0.9955, RandomAcc=0.5516
+  Layer 4: Acc=0.9955, F1=0.9955, RandomAcc=0.5658
+  Layer 5: Acc=0.9955, F1=0.9955, RandomAcc=0.5676
+  Layer 6: Acc=0.9955, F1=0.9955, RandomAcc=0.5856
+  Layer 7: Acc=0.9959, F1=0.9959, RandomAcc=0.5770
+  Layer 8: Acc=0.9959, F1=0.9959, RandomAcc=0.5874
+  Layer 9: Acc=0.9963, F1=0.9963, RandomAcc=0.5732
+  Layer 10: Acc=0.9959, F1=0.9959, RandomAcc=0.5934
+  Layer 11: Acc=0.9951, F1=0.9951, RandomAcc=0.6028
+  Layer 12: Acc=0.9951, F1=0.9951, RandomAcc=0.5919
+
+Probing: is_in_ring
+  Classes: [0 1]
+  Frequency baseline: 0.5161
+  Layer 0: Acc=0.8487, F1=0.8459, RandomAcc=0.5056
+  Layer 1: Acc=0.9608, F1=0.9608, RandomAcc=0.5198
+  Layer 2: Acc=0.9638, F1=0.9638, RandomAcc=0.5250
+  Layer 3: Acc=0.9649, F1=0.9649, RandomAcc=0.5359
+  Layer 4: Acc=0.9694, F1=0.9694, RandomAcc=0.5426
+  Layer 5: Acc=0.9780, F1=0.9780, RandomAcc=0.5370
+  Layer 6: Acc=0.9907, F1=0.9907, RandomAcc=0.5490
+  Layer 7: Acc=0.9951, F1=0.9951, RandomAcc=0.5602
+  Layer 8: Acc=0.9970, F1=0.9970, RandomAcc=0.5501
+  Layer 9: Acc=0.9955, F1=0.9955, RandomAcc=0.5321
+  Layer 10: Acc=0.9966, F1=0.9966, RandomAcc=0.5351
+  Layer 11: Acc=0.9966, F1=0.9966, RandomAcc=0.5490
+  Layer 12: Acc=0.9963, F1=0.9963, RandomAcc=0.5277
+
+Probing: chiral_tag
+  Classes: ['CHI_UNSPECIFIED']
+  Skipped (only one class in training set)
+
+Probing: degree
+  Classes: [1 2 3 4]
+  Frequency baseline: 0.4451
+  Layer 0: Acc=0.5422, F1=0.4512, RandomAcc=0.3726
+  Layer 1: Acc=0.6865, F1=0.6803, RandomAcc=0.3849
+  Layer 2: Acc=0.7052, F1=0.7039, RandomAcc=0.3838
+  Layer 3: Acc=0.7414, F1=0.7399, RandomAcc=0.3808
+  Layer 4: Acc=0.8479, F1=0.8476, RandomAcc=0.3842
+  Layer 5: Acc=0.8924, F1=0.8928, RandomAcc=0.3808
+  Layer 6: Acc=0.9335, F1=0.9335, RandomAcc=0.3808
+  Layer 7: Acc=0.9600, F1=0.9600, RandomAcc=0.3898
+  Layer 8: Acc=0.9765, F1=0.9765, RandomAcc=0.3800
+  Layer 9: Acc=0.9847, F1=0.9847, RandomAcc=0.3793
+  Layer 10: Acc=0.9869, F1=0.9869, RandomAcc=0.4002
+  Layer 11: Acc=0.9854, F1=0.9854, RandomAcc=0.3905
+  Layer 12: Acc=0.9877, F1=0.9877, RandomAcc=0.3658
+
+Probing: formal_charge
+  Classes: [-1  0  1]
+  Frequency baseline: 0.9880
+  Layer 0: Acc=0.9880, F1=0.9821, RandomAcc=0.9824
+  Layer 1: Acc=0.9925, F1=0.9921, RandomAcc=0.9813
+  Layer 2: Acc=0.9951, F1=0.9945, RandomAcc=0.9783
+  Layer 3: Acc=0.9981, F1=0.9981, RandomAcc=0.9806
+  Layer 4: Acc=0.9981, F1=0.9982, RandomAcc=0.9780
+  Layer 5: Acc=0.9993, F1=0.9993, RandomAcc=0.9824
+  Layer 6: Acc=1.0000, F1=1.0000, RandomAcc=0.9791
+  Layer 7: Acc=1.0000, F1=1.0000, RandomAcc=0.9780
+  Layer 8: Acc=1.0000, F1=1.0000, RandomAcc=0.9742
+  Layer 9: Acc=1.0000, F1=1.0000, RandomAcc=0.9787
+  Layer 10: Acc=1.0000, F1=1.0000, RandomAcc=0.9817
+  Layer 11: Acc=0.9996, F1=0.9996, RandomAcc=0.9768
+  Layer 12: Acc=1.0000, F1=1.0000, RandomAcc=0.9806
+
+Probing: total_valence
+  Classes: [1 2 3 4 5 6]
+  Frequency baseline: 0.7612
+  Layer 0: Acc=0.9858, F1=0.9850, RandomAcc=0.7377
+  Layer 1: Acc=0.9914, F1=0.9914, RandomAcc=0.7272
+  Layer 2: Acc=0.9940, F1=0.9940, RandomAcc=0.7212
+  Layer 3: Acc=0.9974, F1=0.9974, RandomAcc=0.7126
+  Layer 4: Acc=0.9974, F1=0.9974, RandomAcc=0.7104
+  Layer 5: Acc=0.9981, F1=0.9981, RandomAcc=0.7074
+  Layer 6: Acc=0.9985, F1=0.9985, RandomAcc=0.7078
+  Layer 7: Acc=0.9989, F1=0.9989, RandomAcc=0.7186
+  Layer 8: Acc=0.9993, F1=0.9993, RandomAcc=0.7145
+  Layer 9: Acc=0.9981, F1=0.9981, RandomAcc=0.7167
+  Layer 10: Acc=0.9993, F1=0.9993, RandomAcc=0.7160
+  Layer 11: Acc=0.9985, F1=0.9985, RandomAcc=0.7007
+  Layer 12: Acc=0.9996, F1=0.9996, RandomAcc=0.6913
+  Saved: /home/zetong/smited_molformer/results/molformer/figures/esol/exp2_probing_atom_type.png
+  Saved: /home/zetong/smited_molformer/results/molformer/figures/esol/exp2_probing_hybridization.png
+  Saved: /home/zetong/smited_molformer/results/molformer/figures/esol/exp2_probing_is_aromatic.png
+  Saved: /home/zetong/smited_molformer/results/molformer/figures/esol/exp2_probing_is_in_ring.png
+  Saved: /home/zetong/smited_molformer/results/molformer/figures/esol/exp2_probing_degree.png
+  Saved: /home/zetong/smited_molformer/results/molformer/figures/esol/exp2_probing_formal_charge.png
+  Saved: /home/zetong/smited_molformer/results/molformer/figures/esol/exp2_probing_total_valence.png
+Results saved to: /home/zetong/smited_molformer/results/molformer/exp2_probing_esol.json
+
+=================================================================
+EXPERIMENT 2 COMPLETE
+Figures : /home/zetong/smited_molformer/results/molformer/figures
+Results : /home/zetong/smited_molformer/results/molformer
+=================================================================
