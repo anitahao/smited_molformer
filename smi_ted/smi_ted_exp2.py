@@ -244,8 +244,7 @@ def train_test(atom_labels):
     df = pd.DataFrame(atom_labels)
     mol_ids = df['mol_id'].values
     unique_mols = np.unique(mol_ids)
-    rng = np.random.default_rng(SEED)
-    rng.shuffle(unique_mols)
+    np.random.shuffle(unique_mols)
    
     split_mol = int(0.8 * len(unique_mols))
     train_mols = set(unique_mols[:split_mol])
